@@ -2,18 +2,11 @@
 
 ## Project Description
 
-This project was created as a playground for investigating various filtering and image processing capabilities of the CUDA NPP Library.
-Currently, the project provides an implementation of the following filters:
- * Canny Edge Detection Filter (aka. canny);
- * Sobel Edge Detection Filter (aka. sobel);
- * Gauss Smooth Filter  (aka. gauss);
- * Sharpening Filter  (aka. sharpen).
- 
- The project allows to choose the input image file in BMP or PGM format, specify the needed filter and provide the filename or directory for the output file.
- Currently, the project allows processing only one image, since there is a problem with NPP kernel execution, which fails when you try to run the same kernel again.
- The project requires a Coursera Lab environment to execute since it provides the configured CUDA environment and doesn't require additional configuration, which currently is out of the scope of this project.
- 
- The project structure follows the template from https://github.com/PascaleCourseraCourses/CUDAatScaleForTheEnterpriseCourseProjectTemplate.
+This project was developed as a platform for exploring various filtering and image processing capabilities of the CUDA NPP Library. It currently implements several filters, including the Canny Edge Detection Filter (also known as canny), the Sobel Edge Detection Filter (sobel), the Gauss Smooth Filter (gauss), and the Sharpening Filter (sharpen).
+
+The project allows users to select an input image in BMP or PGM format, choose the desired filter, and specify the filename or directory for the output file. At present, the project supports processing only one image at a time due to an issue with NPP kernel execution, which fails when the same kernel is run multiple times. To run the project, a Coursera Lab environment is required, as it provides the pre-configured CUDA environment and eliminates the need for additional setup, which is beyond the scope of this project.
+
+The project structure is based on the template from CUDA at Scale for the Enterprise Course Project Template.
 
 ## Code Organization
 
